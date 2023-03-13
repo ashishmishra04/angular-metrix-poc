@@ -1,3 +1,7 @@
+#BASED ON 
+
+https://auth0.com/docs/quickstart/spa/angular/01-login
+
 # AngularMetrixPoc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.

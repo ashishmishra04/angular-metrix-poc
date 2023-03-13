@@ -15,8 +15,8 @@ import {NgxJsonViewerModule} from "ngx-json-viewer";
     AppRoutingModule,
     NgxJsonViewerModule,
     AuthModule.forRoot({
-      domain: 'dev-krux.us.auth0.com',
-      clientId: 'TCikfPsnU1dFxGonhqLChizj3Gdy5kMS',
+      domain: 'DOMAIN-REPLACE',
+      clientId: 'CLIENT-ID-REPLACE',
       authorizationParams: {
         redirect_uri: window.location.origin,
         userAuthProfile:'http://s-kruxmetrix.kruxanalytics.com/auth0/GetUserAuthProfile'

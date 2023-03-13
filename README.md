@@ -2,6 +2,12 @@
 
 https://auth0.com/docs/quickstart/spa/angular/01-login
 
+in app.module.ts
+replace these to values
+
+domain: 'DOMAIN-REPLACE',
+clientId: 'CLIENT-ID-REPLACE',
+
 # AngularMetrixPoc
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.

@@ -1,1 +1,26 @@
-Hello Angular Meterix POC
+<h2>Krux Metrix POC</h2>
+<div>
+  <button (click)="onLogin()">Login</button>
+  <button (click)="onLogout()" [disabled]="!(user$ | async)">Logout</button>
+</div>
+
+<div>
+  <ul *ngIf="user$ | async as user">
+    <li>Name:{{ user.name }}</li>
+    <li>Email:{{ user.email }}</li>
+    <li>Sub:{{ user.sub }}</li>
+  </ul>
+  <h3>User Profile</h3>
+  <div>
+    <ng-container *ngIf="idToken">
+      <ngx-json-viewer [json]="idToken"></ngx-json-viewer>
+    </ng-container>
+  </div>
+  <h3>Access Token</h3>
+  <div>
+    <ng-container *ngIf="accessToken">
+      <ngx-json-viewer [json]="accessToken"></ngx-json-viewer>
+    </ng-container>
+  </div>
+</div>
+
